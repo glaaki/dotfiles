@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 filetype plugin indent on
 
 call plug#begin()
@@ -8,13 +10,18 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
-syntax on
+syntax enable
 set nowrap
 set number
 set autowrite
 set updatetime=250
 set backspace=indent,eol,start
 set completeopt-=preview
+
+" powerline settings
+set rtp+=$HOME/anaconda3/lib/python3.6/site-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
 
 let mapleader=","
 
