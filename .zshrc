@@ -31,7 +31,7 @@ export DYLD_FORCE_FLAT_NAMESPACE=1
 #ZSH_THEME="gallois"
 #ZSH_THEME="garyblessington"
 #ZSH_THEME="miloshadzic"
-ZSH_THEME="nanotech"
+#ZSH_THEME="nanotech"
 #ZSH_THEME="nebirhos"
 #ZSH_THEME="simple"
 #ZSH_THEME="smt"
@@ -39,6 +39,7 @@ ZSH_THEME="nanotech"
 #ZSH_THEME="sunaku"
 #ZSH_THEME="sunrise"
 #ZSH_THEME="wedisagree"
+ZSH_THEME="geometry/geometry"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -84,3 +85,6 @@ alias dash="cd ~/Projects/src/github.com/S-Porter/koober-dash/"
 alias koob="cd ~/Projects/src/github.com/S-Porter/koober-dash/"
 alias ls="ls -AFG"
 alias gh="cd ~/Projects/development"
+
+# this must be at the end of the file
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
