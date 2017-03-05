@@ -2,6 +2,7 @@ iTerm2 base-16 themes I liked:
 bespin dark
 brewer dark
 bright dark
+darktooth dark 256
 hopscotch dark
 irblack dark
 macintosh dark
@@ -15,3 +16,13 @@ summerfruit dark
 tomorrownight dark
 tomorrow light
 twilight dark
+embers dark 256
+flat dark
+harmonic16 dark 256
+mexicolight light 256
+onedark dark 256
+phd dark 256
+railscasts dark 256
+spacemacs dark 256
+unikittydark dark 256
+

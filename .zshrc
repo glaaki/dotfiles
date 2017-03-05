@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/sporter/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # GOROOT-based install location
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
