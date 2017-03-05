@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-A simple dotfile setup for zsh, vim and tmux.
+A simple dotfile setup for zsh, vim and tmux. This also includes my iterm2 backup.
 
 Setup
 --------

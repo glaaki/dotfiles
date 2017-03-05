@@ -21,7 +21,14 @@ set completeopt-=preview
 " powerline settings
 set rtp+=$HOME/anaconda3/lib/python3.6/site-packages/powerline/bindings/vim/
 set laststatus=2
+
+" fix for partial background colors inside tmux
+set t_ut=
 set t_Co=256
+
+" enable these next two for a black background
+" set background=dark
+" highlight Normal ctermfg=grey ctermbg=black
 
 let mapleader=","
 
@@ -77,3 +84,5 @@ autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 
+"colorscheme base16-mocha
+"let base16colorspace=256

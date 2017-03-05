@@ -1,0 +1,17 @@
+iTerm2 base-16 themes I liked:
+bespin dark
+brewer dark
+bright dark
+hopscotch dark
+irblack dark
+macintosh dark
+onedark dark
+pico dark
+pop dark
+railscasts dark
+setiui dark
+spacemacs dark
+summerfruit dark
+tomorrownight dark
+tomorrow light
+twilight dark
