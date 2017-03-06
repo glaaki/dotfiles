@@ -21,6 +21,7 @@ set completeopt-=preview
 " powerline settings
 set rtp+=$HOME/anaconda3/lib/python3.6/site-packages/powerline/bindings/vim/
 set laststatus=2
+set noshowmode " hide duplicate mode text, since powerline already shows it.
 
 " fix for partial background colors inside tmux
 set t_ut=
