@@ -9,7 +9,7 @@ Other various bit of this include:
 - zsh-syntax-highlighting, for the (you guessed it) zsh syntax highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
 - Powerline for the fancy vim status bar: https://github.com/powerline/powerline
 
-Setup
+setup
 --------
 Check out VimConf to your home folder like so:
 
@@ -28,8 +28,10 @@ ln -sf ~/dotfiles/.tmux.conf.local ~/.tmux.conf.local
 
 When you open Vim for the first time you'll need to run `:PlugInstall` to actually pull down the plugins. Tmux user overrides should go in `.tmux.conf.local`.
 
-screenshot of current setup:
-![reference ss](current_iterm_setup.png)
-
-TODO:
+todo
+--------
 - theme the vim powerline to match everything else.
+
+screenshot
+--------
+![reference ss](current_iterm_setup.png)
