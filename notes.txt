@@ -2,7 +2,7 @@ iTerm2 base-16 themes I liked:
 bespin dark
 brewer dark
 bright dark
-darktooth dark 256
+flat dark
 hopscotch dark
 irblack dark
 macintosh dark
@@ -16,8 +16,10 @@ summerfruit dark
 tomorrownight dark
 tomorrow light
 twilight dark
+
+256 color variants:
+darktooth dark 256
 embers dark 256
-flat dark
 harmonic16 dark 256
 mexicolight light 256
 onedark dark 256
@@ -26,3 +28,5 @@ railscasts dark 256
 spacemacs dark 256
 unikittydark dark 256
 
+currently using:
+embers dark 256 with the "bright magenta" color set to 9fca56 instead (it was a shade of white for some reason, and that's what syntax highlighted strings use)

@@ -1,7 +1,13 @@
 dotfiles
 ========
 
-A simple dotfile setup for zsh, vim and tmux. This also includes my iterm2 backup.
+A dotfile setup for zsh, vim and tmux. This also includes my iterm2 backup.
+
+Other various bit of this include:
+- Base16 iTerm2 with the SetiUI theme for the great text colors: https://github.com/chriskempson/base16-iterm2
+- Geometry, for the prompt/nice git branch parts: https://github.com/frmendes/geometry
+- zsh-syntax-highlighting, for the (you guessed it) zsh syntax highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
+- Powerline for the fancy vim status bar: https://github.com/powerline/powerline
 
 Setup
 --------
@@ -24,3 +30,6 @@ When you open Vim for the first time you'll need to run `:PlugInstall` to actual
 
 screenshot of current setup:
 ![reference ss](current_iterm_setup.png)
+
+TODO:
+- theme the vim powerline to match everything else.
