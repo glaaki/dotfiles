@@ -22,3 +22,5 @@ ln -sf ~/dotfiles/.tmux.conf.local ~/.tmux.conf.local
 
 When you open Vim for the first time you'll need to run `:PlugInstall` to actually pull down the plugins. Tmux user overrides should go in `.tmux.conf.local`.
 
+screenshot of current setup:
+![reference ss](current_iterm_setup.png)
