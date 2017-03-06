@@ -8,6 +8,8 @@ Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 syntax enable
@@ -18,10 +20,11 @@ set updatetime=250
 set backspace=indent,eol,start
 set completeopt-=preview
 
-" powerline settings
-set rtp+=$HOME/anaconda3/lib/python3.6/site-packages/powerline/bindings/vim/
-set laststatus=2
-set noshowmode " hide duplicate mode text, since powerline already shows it.
+" airline settings
+let g:airline_theme='base16'
+let g:airline_powerline_fonts = 1
+set laststatus=2 " always show the status bar
+set noshowmode " hide the default vim mode text, airline already shows it
 
 " fix for partial background colors inside tmux
 set t_ut=
