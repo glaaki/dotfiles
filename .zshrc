@@ -78,15 +78,12 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dex="cd ~/Projects/"
-alias dash="cd ~/Projects/src/github.com/S-Porter/koober-dash/"
-alias koob="cd ~/Projects/src/github.com/S-Porter/koober-dash/"
-alias ls="ls -AFG"
-alias gh="cd ~/Projects/development"
 alias dot="cd ~/dotfiles/"
+alias proj="cd ~/Projects/"
+alias gh="cd ~/Projects/development"
+alias dash="cd ~/Projects/src/github.com/glaaki/koober-dash/"
+alias koob="cd ~/Projects/src/github.com/glaaki/koober-dash/"
+alias ls="ls -AFG"
 
 # this must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
