@@ -7,7 +7,8 @@ Other various bit of this include:
 - Base16 iTerm2 with the SetiUI theme for the great text colors: https://github.com/chriskempson/base16-iterm2
 - Geometry, for the prompt/nice git branch parts: https://github.com/frmendes/geometry
 - zsh-syntax-highlighting, for the (you guessed it) zsh syntax highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
-- Powerline for the fancy vim status bar: https://github.com/powerline/powerline
+- Airline for the fancy vim status bar: https://github.com/vim-airline/vim-airline
+- Roboto Mono for Powerline font: https://github.com/powerline/fonts/tree/master/RobotoMono
 
 setup
 --------
