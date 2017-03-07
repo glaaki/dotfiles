@@ -86,6 +86,7 @@ alias dash="cd ~/Projects/src/github.com/S-Porter/koober-dash/"
 alias koob="cd ~/Projects/src/github.com/S-Porter/koober-dash/"
 alias ls="ls -AFG"
 alias gh="cd ~/Projects/development"
+alias dot="cd ~/dotfiles/"
 
 # this must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
