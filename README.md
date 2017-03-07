@@ -35,4 +35,4 @@ todo
 
 screenshot
 --------
-![reference ss](current_iterm_setup.png)
+![reference ss](current_ss.png)
