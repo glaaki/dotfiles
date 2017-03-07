@@ -67,7 +67,7 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 map Q <Nop>
 map q: <Nop>
 
-map <leader>p oimport pudb; pudb.set_trace()<ESC>
+map <leader>p Oimport pudb; pudb.set_trace()<ESC>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
