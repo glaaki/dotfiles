@@ -92,5 +92,9 @@ autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 
+" set tab width to 4 in html files
+autocmd BufNewFile,BufRead *.html setlocal noexpandtab tabstop=4 shiftwidth=4
+autocmd BufNewFile,BufRead *.htm setlocal noexpandtab tabstop=4 shiftwidth=4
+
 "colorscheme base16-mocha
 "let base16colorspace=256
