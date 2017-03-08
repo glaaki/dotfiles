@@ -71,8 +71,8 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # create some vim dirs for holding temp files in one place
-mkdir ~/.vim/swapfiles
-mkdir ~/.vim/backups
+mkdir -p ~/.vim/swapfiles
+mkdir -p ~/.vim/backups
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
