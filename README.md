@@ -26,9 +26,10 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.tmux.conf.local ~/.tmux.conf.local
 ```
-If you want to keep some API keys or other secrets out of git, this setup will source a `.extra` file if it exists. I included an example, simply link it like the others and add it to your `.gitignore`
+If you want to keep some API keys or other secrets out of git, this setup will source a `.extra` file if it exists. I included an example, simply link it like the others and run this git command to stop tracking it:
 ```bash
 ln -sf ~/dotfiles/.extra ~/.extra
+git update-index --assume-unchanged .extra
 ```
 
 When you open Vim for the first time you'll need to run `:PlugInstall` to actually pull down the plugins. Tmux user overrides should go in `.tmux.conf.local` instead of `.tmux.conf`
