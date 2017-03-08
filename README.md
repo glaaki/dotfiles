@@ -12,22 +12,26 @@ Other various bit of this include:
 
 setup
 --------
-Check out VimConf to your home folder like so:
+Check out dotfiles to your home folder like so:
 
 ```bash
 cd ~
-git clone --recursive git://github.com/S-Porter/dotfiles.git
+git clone --recursive git://github.com/glaaki/dotfiles.git
 ```
 
-symlink the files from the repo to your home directory like this:
+Symlink the files from the repo to your home directory like this:
 ```bash
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.tmux.conf.local ~/.tmux.conf.local
 ```
+If you want to keep some API keys or other secrets out of git, this setup will source a `.extra` file if it exists. I included an example, simply link it like the others and add it to your `.gitignore`
+```bash
+ln -sf ~/dotfiles/.extra ~/.extra
+```
 
-When you open Vim for the first time you'll need to run `:PlugInstall` to actually pull down the plugins. Tmux user overrides should go in `.tmux.conf.local`.
+When you open Vim for the first time you'll need to run `:PlugInstall` to actually pull down the plugins. Tmux user overrides should go in `.tmux.conf.local` instead of `.tmux.conf`
 
 todo
 --------

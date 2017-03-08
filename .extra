@@ -1,0 +1,4 @@
+# This file is for storing extra, user-specific config
+# that you won't want to commit to a repo (API keys, etc)
+
+export SUPER_SECRET_API_KEY="data-leak-oh-nooooooooo"

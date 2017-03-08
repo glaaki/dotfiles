@@ -85,5 +85,8 @@ alias dash="cd ~/Projects/src/github.com/glaaki/koober-dash/"
 alias koob="cd ~/Projects/src/github.com/glaaki/koober-dash/"
 alias ls="ls -AFG"
 
+# source the .extra file if it exists for user-specific config (like secrets)
+[ -f .extra ] && source .extra
+
 # this must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
