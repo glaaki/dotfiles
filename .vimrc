@@ -20,6 +20,10 @@ set updatetime=250
 set backspace=indent,eol,start
 set completeopt-=preview
 
+" send vim swap files to tmp so git stops complaining about them.
+set directory=$HOME/.vim/swapfiles//
+set backupdir=$HOME/.vim/backups//
+
 " airline settings
 let g:airline_theme='base16'
 let g:airline_powerline_fonts = 1
