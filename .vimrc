@@ -1,4 +1,3 @@
-execute pathogen#infect()
 
 filetype plugin indent on
 
@@ -11,6 +10,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 syntax enable
