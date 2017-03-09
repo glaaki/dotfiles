@@ -88,6 +88,12 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 map Q <Nop>
 map q: <Nop>
 
+" unmap the arrow keys to try and force myself to use hjkl
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
 map <leader>p Oimport pudb; pudb.set_trace()<ESC>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
