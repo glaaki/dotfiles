@@ -22,6 +22,20 @@ set autowrite
 set updatetime=250
 set backspace=indent,eol,start
 set completeopt-=preview
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
+
+" use tabs by default and tabs are 4 wide
+" language specific overrides are down lower
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
+
+" use 4 spaces per tab in python
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
 " send vim swap files to tmp so git stops complaining about them.
 set directory=$HOME/.vim/swapfiles//
@@ -94,10 +108,6 @@ autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
-
-" set tab width to 4 in html files
-autocmd BufNewFile,BufRead *.html setlocal noexpandtab tabstop=4 shiftwidth=4
-autocmd BufNewFile,BufRead *.htm setlocal noexpandtab tabstop=4 shiftwidth=4
 
 "colorscheme base16-mocha
 "let base16colorspace=256
