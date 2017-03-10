@@ -19,7 +19,7 @@ syntax enable
 set nowrap
 set number
 set autowrite
-set updatetime=250
+set updatetime=350
 set backspace=indent,eol,start
 set completeopt-=preview
 set ignorecase
