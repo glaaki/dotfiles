@@ -81,6 +81,7 @@ mkdir -p ~/.vim/backups
 #
 alias dot="cd ~/dotfiles/"
 alias proj="cd ~/Projects/"
+alias hu="cd ~/hubot/"
 alias gh="cd ~/Projects/development"
 alias dash="cd ~/Projects/src/github.com/glaaki/koober-dash/"
 alias koob="cd ~/Projects/src/github.com/glaaki/koober-dash/"
