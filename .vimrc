@@ -27,6 +27,8 @@ set smartcase
 set incsearch
 set showmatch
 set hlsearch
+set wildmenu
+set smarttab
 
 " use tabs by default and tabs are 4 wide
 " language specific overrides are down lower
