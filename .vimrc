@@ -22,6 +22,7 @@ set autowrite
 set updatetime=350
 set backspace=indent,eol,start
 set completeopt-=preview
+set nocompatible
 set ignorecase
 set smartcase
 set incsearch
