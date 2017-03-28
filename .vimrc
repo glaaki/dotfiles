@@ -5,8 +5,7 @@ call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
-" Plug 'Valloric/YouCompleteMe'
-Plug 'maralla/completor.vim'
+Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
