@@ -118,5 +118,8 @@ autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 
+" 'I forgot to open this file as sudo' trick.
+cmap w!! w !sudo tee > /dev/null %
+
 "colorscheme base16-mocha
 "let base16colorspace=256
