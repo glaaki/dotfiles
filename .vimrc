@@ -121,8 +121,5 @@ autocmd FileType go nmap <Leader>i <Plug>(go-info)
 " 'I forgot to open this file as sudo' trick.
 cmap w!! w !sudo tee > /dev/null %
 
-"colorscheme base16-mocha
-"let base16colorspace=256
-
 " cursor wraps to previous/next line when moving
 set whichwrap+=<,>,h,l,[,]
