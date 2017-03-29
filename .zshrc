@@ -24,21 +24,9 @@ export DYLD_FORCE_FLAT_NAMESPACE=1
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="amuse"
-#ZSH_THEME="alanpeabody"
-#ZSH_THEME="avit"
-#ZSH_THEME="cloud"
-#ZSH_THEME="gallois"
-#ZSH_THEME="garyblessington"
-#ZSH_THEME="miloshadzic"
-#ZSH_THEME="nanotech"
-#ZSH_THEME="nebirhos"
-#ZSH_THEME="simple"
-#ZSH_THEME="smt"
-#ZSH_THEME="sorin"
-#ZSH_THEME="sunaku"
-#ZSH_THEME="sunrise"
-#ZSH_THEME="wedisagree"
+# My favorites: amuse alanpeabody avit cloud gallois garyblessington
+#               miloshadzic nanotech nebirhos simple smt sorin sunaku
+#               sunrise wedisagree
 ZSH_THEME="geometry/geometry"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
