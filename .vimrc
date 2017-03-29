@@ -16,7 +16,7 @@ Plug 'Raimondi/delimitMate'
 call plug#end()
 
 syntax enable
-set nowrap
+set nowrap " text wrapping
 set number
 set autowrite
 set updatetime=350
@@ -123,3 +123,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 "colorscheme base16-mocha
 "let base16colorspace=256
+
+" cursor wraps to previous/next line when moving
+set whichwrap+=<,>,h,l,[,]
