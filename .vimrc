@@ -19,6 +19,7 @@ syntax enable
 set nowrap " text wrapping
 set number
 set autowrite
+set autoindent
 set updatetime=350
 set backspace=indent,eol,start
 set completeopt-=preview
