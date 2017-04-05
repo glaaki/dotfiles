@@ -66594,7 +66594,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/Documents/Wallpapers</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{955, 535}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -66633,15 +66633,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2545 31 641 244 1440 -69 1920 1058 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>335 154 735 382 0 0 1440 878 </string>
+	<string>2625 115 735 382 1440 -69 1920 1058 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1651 57 606 456 -1920 -82 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>272 150 918 498 0 0 1440 878 </string>
+	<string>1915 306 918 498 1440 -69 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 294 592 584 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1447 -43 1906 1032 1440 -69 1920 1058 </string>
+	<string>1440 -69 1914 1048 1440 -69 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>7 10 1426 886 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -68140,7 +68140,7 @@
 			<key>Background Image Is Tiled</key>
 			<false/>
 			<key>Background Image Location</key>
-			<string>/Users/sporter/Documents/Wallpapers/wallhaven-7653.jpg</string>
+			<string>/Users/sporter/Documents/Wallpapers/5rCPTaw.jpg</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
