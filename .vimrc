@@ -13,6 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
 syntax enable
