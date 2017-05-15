@@ -66641,7 +66641,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 294 592 584 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1440 -69 1914 1048 1440 -69 1920 1058 </string>
+	<string>1443 -180 1914 1058 1440 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>7 10 1426 886 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -68720,6 +68720,8 @@
 	<key>SULastCheckTime</key>
 	<date>2017-02-05T02:45:06Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SmartPlacement</key>
 	<true/>

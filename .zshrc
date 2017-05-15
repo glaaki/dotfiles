@@ -67,6 +67,7 @@ mkdir -p ~/.vim/backups
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+alias vim="vim -p"
 alias dot="cd ~/dotfiles/"
 alias proj="cd ~/Projects/"
 alias hu="cd ~/hubot/"
