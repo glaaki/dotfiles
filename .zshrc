@@ -75,6 +75,7 @@ alias gh="cd ~/Projects/development"
 alias dash="cd ~/Projects/src/github.com/glaaki/koober-dash/"
 alias koob="cd ~/Projects/src/github.com/glaaki/koober-dash/"
 alias ls="ls -AFG"
+alias weather="curl wttr.in/~\"65804\""
 
 # source the .extra file if it exists for user-specific config (like secrets)
 [ -f .extra ] && source .extra

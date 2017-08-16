@@ -66637,11 +66637,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1651 57 606 456 -1920 -82 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1915 306 918 498 1440 -69 1920 1058 </string>
+	<string>1915 394 918 495 1440 41 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 294 592 584 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1443 -180 1914 1058 1440 0 1920 1058 </string>
+	<string>0 0 1920 1058 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>7 10 1426 886 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -68674,6 +68674,8 @@
 		<string>0004</string>
 		<string>0005</string>
 	</array>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
