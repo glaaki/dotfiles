@@ -15,6 +15,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
+Plug 'pearofducks/ansible-vim'
 call plug#end()
 
 syntax enable
