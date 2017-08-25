@@ -37,6 +37,14 @@ When you open Vim for the first time you'll need to run `:PlugInstall` to actual
 todo
 --------
 - theme the vim powerline to match everything else.
+- set up an ansible playbook to automate this
+  * vim is set up to put swap files in a different directory
+  * add command to install vim plug
+  * open vim and run :PlugInstall?
+  * make sure ~/.vim/swapfiles and ~/.vim/backups folders are created, this setup puts all the swap files in there.
+  * install zsh-syntax-highlighting
+  * install geometry prompt
+  * chsh for using zsh instead of bash
 
 screenshot
 --------
