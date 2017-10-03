@@ -14,6 +14,8 @@ setup
 --------
 Check out dotfiles to your home folder like so:
 
+bspwm.desktop belongs in /usr/share/xsessions. You'll want to install gdm3 if you're using gnome.
+
 ```bash
 cd ~
 git clone --recursive git://github.com/glaaki/dotfiles.git

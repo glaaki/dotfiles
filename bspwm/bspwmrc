@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#  xrandr --output eDP-1 --brightness 1.3
+# kill all these things so we can reload without extra shenanigans.
+pkill sxhkd && pkill polybar && pkill compton && pkill random_wall
+
+sxhkd &
+xset r rate 180 40
+
+.config/bspwm/fix_monitors.sh
+monitors=( $(bspc query -M --names) )
+if [ ${#monitors[@]} -eq 3 ]; then
+  echo "do stuff for 3 monitors"
+  bspc monitor eDP-1 -d chat scratch
+  bspc monitor DP-1 -d chrome ff
+  bspc monitor DP-2 -d term term term term
+  polybar triple-monitor-builtin &
+  polybar triple-monitor-middle &
+  polybar triple-monitor-right &
+fi
+if [ ${#monitors[@]} -eq 1 ]; then
+  echo "do stuff for 1 monitor"
+  bspc monitor eDP-1 -d chrome term term term term term term
+  polybar base-top &
+fi
+
+feh --bg-fill Pictures/Wallpapers/spacesurf.png
+#.config/bspwm/random_wallpapers.py ~/Pictures/Wallpapers/ &
+
+bspc config border_width         2
+bspc config window_gap           20
+bspc config split_ratio          0.55
+bspc config click_to_focus       any
+bspc config gapless_monocle      false
+bspc config borderless_monocle   false
+bspc config remove_unplugged_monitors true
+
+bspc rule -a google-chrome-stable desktop='chrome'
+bspc rule -a firefox desktop='ff'
+bspc rule -a zoom desktop='scratch' state=floating
+bspc rule -a Pidgin desktop='chat' state=floating
+
+compton --config "$HOME/.config/compton.conf" -b

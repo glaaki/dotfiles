@@ -29,4 +29,4 @@ spacemacs dark 256
 unikittydark dark 256
 
 currently using:
-embers dark 256 with the "bright magenta" color set to 9fca56 instead (it was a shade of white for some reason, and that's what syntax highlighted strings use)
+setiui
