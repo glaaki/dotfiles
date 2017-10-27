@@ -74,11 +74,11 @@ alias hu="cd ~/hubot/"
 alias gh="cd ~/Projects/development"
 alias dash="cd ~/Projects/src/github.com/glaaki/koober-dash/"
 alias koob="cd ~/Projects/src/github.com/glaaki/koober-dash/"
-alias ls="ls -AFG"
+alias ls="ls -AFG --color=auto"
 alias weather="curl wttr.in/~\"65804\""
 
 # source the .extra file if it exists for user-specific config (like secrets)
 [ -f .extra ] && source .extra
 
 # this must be at the end of the file
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
