@@ -4,15 +4,9 @@
 #
 # xmodmap for a list of modifier key identifiers
 
-exec xset r rate 180 90
-exec xrandr --output DP-1 --off
-exec xrandr --output DP-2 --off
-exec xrandr --output eDP-1 --off
-exec xrandr --output DP-2 --primary --auto
-exec xrandr --output DP-1 --auto --right-of DP-2
-exec xrandr --output eDP-1 --auto --left-of DP-2
+exec $HOME/.config/scripts/fix_monitors.sh
+exec $HOME/.config/scripts/prefs.sh
 exec feh --bg-fill Pictures/Wallpapers/spacesurf.png
-exec compton --config "$HOME/.config/compton.conf" -b
 
 set $mod Mod4
 
