@@ -5,7 +5,7 @@
 pkill sxhkd && pkill polybar && pkill compton && pkill random_wall
 
 sxhkd &
-xset r rate 180 40
+xset r rate 180 90
 
 .config/bspwm/fix_monitors.sh
 monitors=( $(bspc query -M --names) )
@@ -36,7 +36,7 @@ bspc config borderless_monocle   false
 bspc config remove_unplugged_monitors true
 
 bspc rule -a google-chrome-stable desktop='chrome'
-bspc rule -a firefox desktop='ff'
+bspc rule -a firefox -o desktop='ff'
 bspc rule -a zoom desktop='scratch' state=floating
 bspc rule -a Pidgin desktop='chat' state=floating
 

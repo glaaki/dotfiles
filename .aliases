@@ -2,5 +2,5 @@
 
 alias vim="vim -p"
 alias dot="cd ~/git/dotfiles"
-alias ls="ls -AFG --color=auto"
+alias ls="ls -AFG --color=auto --group-directories-first"
 alias weather="curl wttr.in/~\"65804\""

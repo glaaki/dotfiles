@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=i3
+Comment=i3 with them useless gaps!
+Exec=i3
+TryExec=i3
+Type=Application
+DesktopNames=i3
+Keywords=tiling;wm;windowmanager;window;manager;
