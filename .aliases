@@ -1,0 +1,6 @@
+# This file is for storing extra, user-specific config
+
+alias vim="vim -p"
+alias dot="cd ~/git/dotfiles"
+alias ls="ls -AFG --color=auto"
+alias weather="curl wttr.in/~\"65804\""

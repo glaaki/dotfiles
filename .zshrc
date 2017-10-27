@@ -40,20 +40,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# set your language environment
+export LANG=en_US.UTF-8
+export EDITOR='vim'
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCH="x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -62,23 +55,9 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 mkdir -p ~/.vim/swapfiles
 mkdir -p ~/.vim/backups
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-alias vim="vim -p"
-alias dot="cd ~/dotfiles/"
-alias proj="cd ~/Projects/"
-alias hu="cd ~/hubot/"
-alias gh="cd ~/Projects/development"
-alias dash="cd ~/Projects/src/github.com/glaaki/koober-dash/"
-alias koob="cd ~/Projects/src/github.com/glaaki/koober-dash/"
-alias ls="ls -AFG --color=auto"
-alias weather="curl wttr.in/~\"65804\""
-
-# source the .extra file if it exists for user-specific config (like secrets)
+# source .aliases & .extra file if they exist. use .extra for not-git things (like secrets)
 [ -f .extra ] && source .extra
+[ -f .aliases ] && source .aliases
 
 # this must be at the end of the file
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
