@@ -1,4 +1,5 @@
 #!/bin/bash
+#TODO: rewrite this so it uses pure xrandr
 
 xrandr --output DP-1 --off
 xrandr --output DP-2 --off

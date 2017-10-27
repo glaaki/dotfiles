@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#  xrandr --output eDP-1 --brightness 1.3
 # kill all these things so we can reload without extra shenanigans.
 pkill sxhkd && pkill polybar && pkill compton && pkill random_wall
 
 sxhkd &
-xset r rate 180 90
 
-.config/bspwm/fix_monitors.sh
+$HOME/.config/scripts/fix_monitors.sh
+$HOME/.config/scripts/prefs.sh
+
 monitors=( $(bspc query -M --names) )
 if [ ${#monitors[@]} -eq 3 ]; then
   echo "do stuff for 3 monitors"
@@ -35,9 +35,7 @@ bspc config gapless_monocle      false
 bspc config borderless_monocle   false
 bspc config remove_unplugged_monitors true
 
-bspc rule -a google-chrome-stable desktop='chrome'
+bspc rule -a google-chrome-stable -o desktop='chrome'
 bspc rule -a firefox -o desktop='ff'
 bspc rule -a zoom desktop='scratch' state=floating
 bspc rule -a Pidgin desktop='chat' state=floating
-
-compton --config "$HOME/.config/compton.conf" -b
