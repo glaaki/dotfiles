@@ -5,7 +5,7 @@ xrandr --output DP-1 --off
 xrandr --output DP-2 --off
 xrandr --output eDP-1 --off
 
-monitors=( $(bspc query -M --names) )
+monitors=( $(xrandr -q | grep " connected" | awk '{print $1;}') )
 
 if [ ${#monitors[@]} -eq 3 ]; then
   xrandr --output DP-2 --primary --auto
