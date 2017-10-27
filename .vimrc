@@ -5,7 +5,7 @@ call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -20,7 +20,7 @@ call plug#end()
 
 syntax enable
 set nowrap " text wrapping
-set number
+set nonumber
 set autowrite
 set autoindent
 set updatetime=350
@@ -35,11 +35,11 @@ set hlsearch
 set wildmenu
 set smarttab
 
-" use tabs by default and tabs are 4 wide
+" use spaces by default and tabs are 2 wide
 " language specific overrides are down lower
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
 
 " use 4 spaces per tab in python
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
@@ -127,3 +127,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 " cursor wraps to previous/next line when moving
 set whichwrap+=<,>,h,l,[,]
+
+"this bit will set the tab fill to transparent in termite
+highlight TabLineFill term=bold cterm=bold gui=bold
