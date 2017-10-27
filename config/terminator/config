@@ -1,0 +1,32 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  geometry_hinting = False
+  inactive_color_offset = 1.0
+  tab_position = hidden
+[keybindings]
+  copy = <Control>c
+  layout_launcher = <Primary><Alt>d
+  paste = <Control>v
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_darkness = 0.59
+    background_image = None
+    background_type = transparent
+    cursor_shape = underline
+    font = Roboto Mono for Powerline Bold 13
+    palette = "#151718:#cd3f45:#9fca56:#e6cd69:#55b5db:#a074c4:#55dbbe:#d6d6d6:#41535b:#db7b55:#8ec43d:#3b758c:#43a5d5:#eeeeee:#8a553f:#d6d6d6"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
