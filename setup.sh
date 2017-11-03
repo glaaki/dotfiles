@@ -13,5 +13,4 @@ ln -sf $dots_dir/.vimrc $HOME
 ln -sf $dots_dir/.zshrc $HOME
 ln -sf $dots_dir/.tmux.conf $HOME
 ln -sf $dots_dir/.tmux.conf.local $HOME
-ln -sf $dots_dir/.extra $HOME
 ln -sf $dots_dir/.aliases $HOME
