@@ -10,7 +10,7 @@ $HOME/.config/scripts/prefs.sh
 
 monitors=( $(bspc query -M --names) )
 if [ ${#monitors[@]} -eq 3 ]; then
-  echo "do stuff for 3 monitors"
+  echo "3 displays detected"
   bspc monitor eDP-1 -d chat scratch
   bspc monitor DP-1 -d chrome ff
   bspc monitor DP-2 -d term term term term
@@ -19,7 +19,7 @@ if [ ${#monitors[@]} -eq 3 ]; then
   polybar triple-monitor-right &
 fi
 if [ ${#monitors[@]} -eq 1 ]; then
-  echo "do stuff for 1 monitor"
+  echo "1 display detected"
   bspc monitor eDP-1 -d chrome term term term term term term
   polybar base-top &
 fi

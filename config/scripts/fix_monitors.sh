@@ -1,4 +1,5 @@
 #!/bin/bash
+#TODO: need to do a hostname check and make this portable across machines
 
 xrandr --output DP-1 --off
 xrandr --output DP-2 --off

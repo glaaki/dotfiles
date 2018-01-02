@@ -3,7 +3,7 @@ screenchange-reload = true
 
 [bar/base-top]
 width = 100%
-height = 35 
+height = 32
 offset-x = 0
 offset-y = -1 
 
@@ -65,7 +65,7 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-background = #88000000
-label-focused-underline= #ddd
+label-focused-underline= #a1b56c
 label-focused-padding = 4
 
 label-occupied = %icon%
