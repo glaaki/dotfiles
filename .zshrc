@@ -55,9 +55,15 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 mkdir -p ~/.vim/swapfiles
 mkdir -p ~/.vim/backups
 
-# source .aliases & .extra file if they exist. use .extra for not-git things (like secrets)
-[ -f .extra ] && source .extra
-[ -f .aliases ] && source .aliases
+# source these files if they exist. use .extra for not-git things (like secrets)
+[ -f $HOME/.extra ] && source .extra
+[ -f $HOME/.bash_aliases ] && source .bash_aliases
+[ -f $HOME/.less_termcap ] && source .less_termcap # man page colors!
+
+workon() {
+  target=${1%/}
+  source "$HOME/$target/bin/activate"
+}
 
 # this must be at the end of the file
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

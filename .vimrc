@@ -19,6 +19,7 @@ Plug 'pearofducks/ansible-vim'
 call plug#end()
 
 syntax enable
+colorscheme delek
 set nowrap " text wrapping
 set nonumber
 set autowrite
@@ -130,3 +131,8 @@ set whichwrap+=<,>,h,l,[,]
 
 "this bit will set the tab fill to transparent in termite
 highlight TabLineFill term=bold cterm=bold gui=bold
+
+" f5 to rm all trailing whitespace
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+" highlight trailing whitespace as an error
+match ErrorMsg '\s\+$'

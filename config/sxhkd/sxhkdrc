@@ -139,3 +139,7 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
   xrandr --output eDP-1 --brightness 0.8
 
+# these are the fn keys, figure out correct pactl cmds.
+#XF86AudioMute
+#XF86AudioLowerVolume
+#XF86AudioRaiseVolume
