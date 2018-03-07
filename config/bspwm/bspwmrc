@@ -18,6 +18,12 @@ if [ ${#monitors[@]} -eq 3 ]; then
   polybar triple-monitor-middle &
   polybar triple-monitor-right &
 fi
+if [ ${#monitors[@]} -eq 2 ]; then
+  echo "2 displays detected"
+  bspc monitor eDP-1 -d chrome term term term term term term
+  bspc monitor DP-1 -d term term term term
+  polybar base-top &
+fi
 if [ ${#monitors[@]} -eq 1 ]; then
   echo "1 display detected"
   bspc monitor eDP-1 -d chrome term term term term term term
