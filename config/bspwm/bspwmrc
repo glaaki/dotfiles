@@ -2,33 +2,51 @@
 
 # kill all these things so we can reload without extra shenanigans.
 pkill sxhkd && pkill polybar && pkill compton && pkill random_wall
-
 sxhkd &
-
-$HOME/.config/scripts/fix_monitors.sh
 $HOME/.config/scripts/prefs.sh
 
-monitors=( $(bspc query -M --names) )
-if [ ${#monitors[@]} -eq 3 ]; then
-  echo "3 displays detected"
-  bspc monitor eDP-1 -d chat scratch
-  bspc monitor DP-1 -d chrome ff
-  bspc monitor DP-2 -d term term term term
-  polybar triple-monitor-builtin &
-  polybar triple-monitor-middle &
-  polybar triple-monitor-right &
-fi
-if [ ${#monitors[@]} -eq 2 ]; then
-  echo "2 displays detected"
-  bspc monitor eDP-1 -d chrome term term term term term term
-  bspc monitor DP-1 -d term term term term
-  polybar base-top &
-fi
-if [ ${#monitors[@]} -eq 1 ]; then
-  echo "1 display detected"
-  bspc monitor eDP-1 -d chrome term term term term term term
-  polybar base-top &
-fi
+# machine-specific config in here.
+case $HOSTNAME in
+  (glaaki-pc)
+    #use pavucontrol to get it working then pacmd list | grep "active port" to find the correct port.
+    #doesn't work unless this sleep is here. pulseaudio not starting fast enough? ¯\(°_o)/¯
+    bash -c 'sleep 10; pacmd set-sink-port 1 analog-output-headphones' &
+    bspc monitor DisplayPort-0 -d chrome chat scratch
+    bspc monitor DisplayPort-1 -d term term term term term
+    polybar base-top &
+    polybar double-monitor-left &
+    polybar double-monitor-right &
+    ;;
+  (l2300200)
+    $HOME/.config/scripts/fix_monitors.sh
+    monitors=( $(bspc query -M --names) )
+    if [ ${#monitors[@]} -eq 3 ]; then
+      echo "work, 3 displays"
+      bspc monitor eDP-1 -d chat scratch
+      bspc monitor DP-1 -d chrome ff
+      bspc monitor DP-2 -d term term term term
+      polybar triple-monitor-builtin &
+      polybar triple-monitor-middle &
+      polybar triple-monitor-right &
+    fi
+    if [ ${#monitors[@]} -eq 2 ]; then
+      echo "work, 2 displays"
+      bspc monitor eDP-1 -d chrome term term term term term term
+      bspc monitor DP-1 -d term term term term
+      polybar base-top &
+    fi
+    if [ ${#monitors[@]} -eq 1 ]; then
+      echo "built in display..."
+      bspc monitor eDP-1 -d term term term term term term chrome
+      polybar base-top &
+    fi
+    ;;
+  (*)
+    bspc monitor DisplayPort-0 -d chrome chat scratch
+    bspc monitor DisplayPort-1 -d term term term term term
+    polybar base-top &
+    ;;
+esac
 
 feh --bg-fill Pictures/Wallpapers/spacesurf.png
 #.config/bspwm/random_wallpapers.py ~/Pictures/Wallpapers/ &
