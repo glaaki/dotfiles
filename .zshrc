@@ -65,5 +65,8 @@ workon() {
   source "$HOME/$target/bin/activate"
 }
 
+[ -f $HOME/git/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/completion.zsh.inc ] && source $HOME/git/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/completion.zsh.inc
+[ -f $HOME/git/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.zsh.inc ] && source $HOME/git/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.zsh.inc
+
 # this must be at the end of the file
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
